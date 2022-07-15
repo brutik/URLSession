@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  URLSession
 //
-//  Created by Aleh Kuchynski on 11/07/2022.
+//  Created by Aleh Kuchynski on 15/07/2022.
 //
 
 import UIKit
@@ -49,4 +49,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
+
 
