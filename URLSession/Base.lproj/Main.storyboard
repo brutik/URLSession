@@ -33,6 +33,9 @@
                                 <rect key="frame" x="0.0" y="-32" width="414" height="960"/>
                                 <color key="tintColor" red="0.31043683978873238" green="0.40149097711267606" blue="0.60585387323943662" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Ze4-Ob-03F">
+                                <rect key="frame" x="197" y="421" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,18 +48,22 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gDA-Ol-2nB" secondAttribute="bottom" id="DJR-bY-0Gn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="gDA-Ol-2nB" secondAttribute="top" constant="44" id="LsS-1Z-i5q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mwz-Qg-ocl" secondAttribute="trailing" id="OKT-ka-rlg"/>
+                            <constraint firstItem="Ze4-Ob-03F" firstAttribute="centerX" secondItem="Mwz-Qg-ocl" secondAttribute="centerX" id="Qxg-3A-hDu"/>
                             <constraint firstItem="uGV-6p-hUD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="U0w-4M-Xxs"/>
                             <constraint firstItem="Mwz-Qg-ocl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ajF-4f-hXz"/>
                             <constraint firstItem="Mwz-Qg-ocl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fOP-Ek-vak"/>
+                            <constraint firstItem="Ze4-Ob-03F" firstAttribute="centerY" secondItem="Mwz-Qg-ocl" secondAttribute="centerY" constant="-17" id="h5H-kY-fcp"/>
                             <constraint firstItem="uGV-6p-hUD" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="395:818" id="iEp-CZ-ivP"/>
                             <constraint firstItem="Mwz-Qg-ocl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jpG-xa-kby"/>
                             <constraint firstItem="Mwz-Qg-ocl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mhj-pS-UoV"/>
                             <constraint firstItem="uGV-6p-hUD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="sAE-C3-Tfv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mwz-Qg-ocl" secondAttribute="trailing" id="soK-Bv-Cm5"/>
                             <constraint firstItem="Mwz-Qg-ocl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yGy-gP-bef"/>
+                            <constraint firstItem="Ze4-Ob-03F" firstAttribute="centerY" secondItem="Mwz-Qg-ocl" secondAttribute="centerY" constant="-17" id="yr5-82-RVr"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="Ze4-Ob-03F" id="RWo-Na-Bc9"/>
                         <outlet property="getImageButton" destination="gDA-Ol-2nB" id="izl-97-7aL"/>
                         <outlet property="imageView" destination="Mwz-Qg-ocl" id="3UK-2P-H4K"/>
                         <outlet property="label" destination="uGV-6p-hUD" id="KAu-sK-r4z"/>
